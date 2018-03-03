@@ -12,7 +12,8 @@ RUN npm install
 COPY . .
 
 # Install Angular Cli
-#RUN npm install -g @angular/cli
+RUN npm config set unsafe-perm true
+RUN npm install -g @angular/cli
 
 # Build the app
 RUN ng build --target=production --environment=prod
