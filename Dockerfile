@@ -17,5 +17,5 @@ RUN npm install -g @angular/cli
 # Build the app
 RUN ng build --target=production --environment=prod
 
-EXPOSE 8080
+EXPOSE 3000
 CMD [ "npm", "start" ]
